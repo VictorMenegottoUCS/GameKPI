@@ -1,0 +1,90 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+}
+
+body{
+  background-color: white;
+  height: 100%;
+}
+
+#icone {
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+}
+
+#check{
+  display: none;
+  background-color: #f00;
+}
+
+.barra{
+  background-color: #333;
+  height: 100%;
+  width: 300px;
+  position: absolute;
+  left: -300px;
+  transition: all .2s linear;
+}
+
+.barra .link{
+  list-style: none;
+  background-color: #494950;
+}
+
+nav{
+  width: 100%;
+  position: absolute;
+  top: 60px;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+.link{
+  color: #f4f4f9;
+  font-family: 'Arial';
+  font-size: 12pt;
+  padding: 20px;
+  border-bottom: 2px solid #222;
+  transition:  all .2s linear;
+  opacity: 0;
+  margin-top: 200px;
+}
+
+k:hover{
+  background-color: #050542;
+}
+
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(300px);
+
+}
+
+#formulario{
+  height: 100%;
+  width: 30%;
+  background-color: #333;
+}
+
+.mb-3{
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
+#inddesc{
+  width: 80%;
+}
