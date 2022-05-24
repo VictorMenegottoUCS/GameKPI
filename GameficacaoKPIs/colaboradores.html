@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="estilos/style.css" rel="stylesheet">
+	<link rel="icon" type="imagem/png" href="imagens/iconeguia.png" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<title>Cadastro de colaboradores</title>
+</head>
+
+<body>
+	<input type="checkbox" id="check">
+	<label for="check" id="icone"><img src="https://i.imgur.com/RWHvwPE.png"/></label>
+	<div class="barra">
+		<nav>
+			<a href="index.html"><div class="link">Home</div></a>
+			<a href="colaboradores.html"><div class="link">Colaboradores</div></a>
+			<a href="indicadores.html"><div class="link">KPI's</div></a>
+			<a href="squads.html"><div class="link">Squads</div></a>
+			<a href="pontuacao.html"><div class="link">Pontuação</div></a>
+			<a href="ranking.html"><div class="link">Ranking</div></a>
+			<a href="suporte.html"><div class="link">Suporte</div></a>
+		</nav>
+	</div>
+
+	<div id="formulario">
+		<div class="mb-3" id=>
+			<label for="colcod" class="form-label" id="lblcod">Código:</label>
+  			<input type="text" class="form-control" id="colcod">
+
+  			<label for="colnom" class="form-label" id="lblnom">Nome:</label>
+  			<input type="text" class="form-control" id="colnom">
+
+  			<label for="colcar" class="form-label" id="lblcar">Cargo:</label>
+  			<input type="text" class="form-control" id="colcar">
+  			
+  			<button type="button" class="btn btn-light" id="btlimpar">Limpar</button>
+  			<button type="button" class="btn btn-success" id="btconfirmar">Confirmar</button>
+		</div>
+	</div>
+
+	<div id="grid">
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Código</th>
+					<th>Nome</th>
+					<th>Cargo</th>
+				</tr>
+			</thead>			
+		</table>
+	</div>
+</div>
+
+</body>
+
+</html>
