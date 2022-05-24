@@ -1,6 +1,6 @@
 # GameKPI
 ## Gameficação de KPI's
-
+### Desenvolvido por: Giordano L. Morandi, Gustavo Baldin, Victor S. Menegotto e Vinicius Endres
 ### Contexto
 
 * Problema: Falta de engajamento no acompanhamento de KPIs para identificação e ação de melhorias;
