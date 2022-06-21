@@ -5,6 +5,7 @@
 	$codigo = '';
 	$nome = '';
 	$cargo = '';
+	$num_squad = '';
 
 	$consulta = "SELECT * FROM tcolaborador";
 	$con = mysqli_query($conexao, $consulta) or die($mysqli->error);
@@ -20,6 +21,7 @@
 				$codigo = $colab['codigo'];
 				$nome = $colab['nome'];
 				$cargo = $colab['cargo'];
+				$num_squad = $colab['num_squad'];
 			}
 		}
 		else{
@@ -67,6 +69,9 @@
 
 	  			<label for="colcar" class="form-label" id="lblcar">Cargo:</label>
 	  			<input type="text" class="form-control" id="colcar" name="cargo" value="<?php echo $cargo ?>">
+
+	  			<label for="colsquad" class="form-label" id="lblsquad">Pertence ao squad número:</label>
+	  			<input type="text" class="form-control" id="colsquad" name="squad" value="<?php echo $num_squad ?>">
 	  			
 	  			<input type="hidden" name="codigoH" value="<?php echo $codigo ?>">
 	  			<button type="submit" class="btn btn-success" id="btconfirmar">Confirmar</button>
@@ -81,6 +86,7 @@
 					<th>Código</th>
 					<th>Nome</th>
 					<th>Cargo</th>
+					<th>Squad</th>
 					<th>Ações</th>
 				</tr>
 			</thead>
@@ -89,6 +95,7 @@
 				<td><?php echo $dado["codigo"]; ?></td>
 				<td><?php echo $dado["nome"]; ?></td>
 				<td><?php echo $dado["cargo"]; ?></td>
+				<td><?php echo $dado["num_squad"]; ?></td>
 				<td><a class='btn btn-sm btn-primary' href='colaboradoresEdit.php?codigo=<?php echo $dado['codigo']; ?>'>
 						<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil' viewBox='0 0 16 16'>
 		  					<path d='M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z'/>

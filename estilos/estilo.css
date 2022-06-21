@@ -136,6 +136,10 @@ k:hover{
   margin-top: 20px;
 }
 
+#lblsquad{
+  margin-top: 20px;
+}
+
 #colcod{
   width: 50%;
 }
@@ -146,6 +150,30 @@ k:hover{
 
 #colcar{
   width: 90%;
+}
+
+#colcar{
+  width: 30%;
+}
+
+#squadnum{
+  width: 50%;
+}
+
+#squadnom{
+  width: 90%;
+}
+
+#sprint{
+  width: 20%;
+}
+
+#lblnom{
+  margin-top: 20px;
+}
+
+#lblspr{
+  margin-top: 20px;
 }
 
 .form-label{
