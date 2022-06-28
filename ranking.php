@@ -22,7 +22,7 @@
 			<a href="squads.php"><div class="link">Squads</div></a>
 			<a href="pontuacao.php"><div class="link">Pontuação</div></a>
 			<a href="ranking.php"><div class="link">Ranking</div></a>
-			<a href="suporte.php"><div class="link">Suporte</div></a>
+			<a href="sobre.php"><div class="link">Sobre</div></a>
 		</nav>
 	</div>
 </body>

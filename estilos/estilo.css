@@ -9,6 +9,7 @@ html {
 
 body{
   height: 100%;
+  margin:  0px;
 }
 
 #telaPrincipal{
@@ -27,6 +28,44 @@ body{
   width: 65%;
   padding-top: 7%;
   float: right;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 60%;
+  height: 80%;
+  background: whitesmoke;
+  border-radius: 20px;
+}
+
+.sobre{
+  padding-top: 7px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.textoSobre{
+  text-align: justify;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.desenvolvedores{
+  text-align: justify;
+  font-size: 20px;
+  padding-top: 3px;
+  padding-left: 70px;
+  padding-right: 50px;
 }
 
 #check{
@@ -152,7 +191,7 @@ k:hover{
   width: 90%;
 }
 
-#colcar{
+#colsquad{
   width: 30%;
 }
 

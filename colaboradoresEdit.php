@@ -54,7 +54,7 @@
 			<a href="squads.php"><div class="link">Squads</div></a>
 			<a href="pontuacao.php"><div class="link">Pontuação</div></a>
 			<a href="ranking.php"><div class="link">Ranking</div></a>
-			<a href="suporte.php"><div class="link">Suporte</div></a>
+			<a href="sobre.php"><div class="link">Sobre</div></a>
 		</nav>
 	</div>
 
@@ -71,7 +71,7 @@
 	  			<input type="text" class="form-control" id="colcar" name="cargo" value="<?php echo $cargo ?>">
 
 	  			<label for="colsquad" class="form-label" id="lblsquad">Pertence ao squad número:</label>
-	  			<input type="text" class="form-control" id="colsquad" name="squad" value="<?php echo $num_squad ?>">
+	  			<input type="text" class="form-control" id="colsquad" name="num_squad" value="<?php echo $num_squad ?>">
 	  			
 	  			<input type="hidden" name="codigoH" value="<?php echo $codigo ?>">
 	  			<button type="submit" class="btn btn-success" id="btUpdate">Confirmar</button>
