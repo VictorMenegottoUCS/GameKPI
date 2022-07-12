@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Tempo de geração: 28-Jun-2022 às 20:58
--- Versão do servidor: 10.4.24-MariaDB
--- versão do PHP: 8.1.6
+-- Host: localhost
+-- Generation Time: Jul 10, 2022 at 10:05 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `gameficacao`
+-- Database: `gameficacao`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tcolaborador`
+-- Table structure for table `tcolaborador`
 --
 
 CREATE TABLE `tcolaborador` (
@@ -37,7 +37,7 @@ CREATE TABLE `tcolaborador` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tkpi`
+-- Table structure for table `tkpi`
 --
 
 CREATE TABLE `tkpi` (
@@ -50,7 +50,20 @@ CREATE TABLE `tkpi` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tsquad`
+-- Table structure for table `tpontuacao`
+--
+
+CREATE TABLE `tpontuacao` (
+  `codigo` int(3) NOT NULL,
+  `num_squad` int(3) NOT NULL,
+  `codigo_kpi` int(3) NOT NULL,
+  `pontos` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tsquad`
 --
 
 CREATE TABLE `tsquad` (
@@ -60,26 +73,42 @@ CREATE TABLE `tsquad` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices para tabela `tcolaborador`
+-- Indexes for table `tcolaborador`
 --
 ALTER TABLE `tcolaborador`
   ADD PRIMARY KEY (`codigo`);
 
 --
--- Índices para tabela `tkpi`
+-- Indexes for table `tkpi`
 --
 ALTER TABLE `tkpi`
   ADD PRIMARY KEY (`codigo`);
 
 --
--- Índices para tabela `tsquad`
+-- Indexes for table `tpontuacao`
+--
+ALTER TABLE `tpontuacao`
+  ADD PRIMARY KEY (`codigo`);
+
+--
+-- Indexes for table `tsquad`
 --
 ALTER TABLE `tsquad`
   ADD PRIMARY KEY (`numero`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tpontuacao`
+--
+ALTER TABLE `tpontuacao`
+  MODIFY `codigo` int(3) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
